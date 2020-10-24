@@ -1,0 +1,28 @@
+
+.welcome{
+    background-color: darkseagreen;
+    position:relative;
+    flex: 0.7;
+}
+.welcome__info{
+    color: white;
+    z-index: 1;
+    margin: auto;
+    text-transform: capitalize;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    font-size: 30px;
+}
+.welcome__container{
+    display: flex;
+}
+
+.welcome__video{
+    display: grid;
+    position: absolute;
+    place-items: center;
+    flex: 1;
+    min-width: 100%;
+    min-height: 100%
+}

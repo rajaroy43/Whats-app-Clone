@@ -1,0 +1,76 @@
+.sidebar {
+  flex: 0.3;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-right: 1px solid lightgray;
+}
+.sidebar__headerRight {
+  display: flex;
+  min-width: 8vw;
+  justify-content: space-between;
+}
+.sidebar__search {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid white;
+  background-color: white;
+  padding: 10px;
+}
+
+.sidebarSearch__container:focus-within{
+    padding: 0;
+}
+.sidebar__search:focus-within{
+    border-bottom: 1px solid lightgray;
+    border-radius: 0;
+}
+
+.sidebar__search > .MuiSvgIcon-root {
+  color: grey;
+}
+
+.sidebar__search > input {
+  border: none;
+  width: 100%;
+  padding: 5px;
+  outline: none;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 300;
+}
+
+.sidebarSearch__container{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.sidebar__chats{
+    background-color: white;
+    flex: 1;
+    overflow: scroll;
+    border-top: 1px solid lightgray;
+}
+.sidebar__chats::-webkit-scrollbar{
+  display: none;
+}
+
+.sidebar__logout{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: grey ;
+  background-color: whitesmoke;
+}
+.chat__header>.MuiAvatar-root{
+object-fit: contain !important;
+}
