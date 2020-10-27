@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     firebase.auth().onAuthStateChanged((user)=>{
       if(user){
-        console.log(user);
+       
         dispatch({
           type:"SET_USER",
           user:user

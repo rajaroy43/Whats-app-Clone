@@ -37,6 +37,7 @@
   background-position: center;
   padding: 5px 70px;
   overflow: scroll;
+  
 }
 .chat__body::-webkit-scrollbar{
   display: none;
@@ -71,7 +72,7 @@
 
 .chat__reciever {
   margin-left: auto;
-  background-color: #efc;
+  background-color: #efc !important;
 }
 .chat__footer {
   flex: 0.1;
@@ -80,6 +81,7 @@
   justify-content: space-between;
   background-color: #f0f0f0;
   border-top: 1px solid lightgray;  
+  position: relative;
 }
 
 .chat__footer>form{
@@ -87,14 +89,14 @@
   flex: 1 ;
 }
 
-.chat__footer>form>input{
+.chat__footer>form>input[type="text"]{
   flex: 1;
   border-radius: 30px;
   border: none;
   outline: none;
   padding: 10px;
   line-height: 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .chat__footer>form>button{
@@ -104,6 +106,129 @@
 }
 
 .chat__footer>.MuiSvgIcon-root {
-  padding: 10px;
+  padding: 8px;
   color: gray;
+}
+
+.chat__footer form{
+  display: flex;
+  align-items: center;
+}
+
+input[type="file"]::-webkit-file-upload-button{
+ display: none;
+}
+input[type=file] {
+  max-width: 10%; 
+  height: 15px;
+  margin-left: -20px;
+  border: none;
+  padding-left: 10px;
+}
+
+
+.chat__media>embed{
+  max-width:300px;
+  object-fit: fill;
+}
+
+.chat__media>embed::-webkit-scrollbar{
+  display: none;
+}
+
+.chat__media{
+  margin-bottom: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  border-radius: 5px;
+  position: relative;
+  padding: 5px;
+  background-color: #fff;
+  
+}
+
+.chat__media>a{
+  color: gray;
+  margin-top: 5px;
+  align-self: flex-end;
+  font-size: 30px;
+}
+
+
+.attach__file{
+  cursor: pointer;
+}
+
+.imageUploader-progress {
+  width: 100%;
+  height: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+
+.chat__footer button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: gray;
+}
+
+.chat__footer>button:focus{
+  border: none;
+}
+.emoji-picker-react{
+  position: absolute !important;
+  width: 100% !important;
+  height: 400px;
+  color: white !important;
+  bottom: 55px;
+  background-color: whitesmoke !important;
+}
+
+.frequencyBars{
+  max-width: 150px;
+}
+
+.true{
+opacity: 1;
+}
+
+.false{
+opacity: 0;
+width: 0;
+}
+
+.clear__icon{
+  color: tomato !important;
+  border-radius: 50%;
+  border: 1px solid;
+  margin-right: 5px;
+  font-size: 30px !important;
+}
+
+.right__icon{
+  color: #45ce5d !important;
+  border: 1px solid !important;
+  border-radius: 50% ;
+  font-size: 30px !important;
+  margin-left: 10px;
+}
+
+.clear__icon:hover{
+  background-color: tomato;
+  color: white !important;
+}
+
+.right__icon:hover{
+  background-color: #45ce5d;
+  color: white !important;
+}
+
+.chat__footerRight{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
