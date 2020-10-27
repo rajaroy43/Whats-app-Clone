@@ -116,6 +116,7 @@ function Chat() {
   // setisAudio(true);
   setrecord(false);
   }
+  
   return (
     <div className="chat">
       <div className="chat__header">
@@ -148,12 +149,13 @@ function Chat() {
         </div>
       </div>
       <div className="chat__body" ref={scrollRef}>
-        {messages?.map((message) => (
-          <>
+        {messages?.map((message,index) => (
+          <div>
             <p
               className={`chat__message ${
                 message.name === user.displayName && `chat__reciever`
-              }`}
+              }`
+              }
             >
               <span className="chat__name">{message.name}</span>
               <div className="chat__messageInfo">
@@ -177,7 +179,7 @@ function Chat() {
             ) : (
               ""
             )}
-          </>
+          </div>
         ))}
       </div>
       <div className="chat__footer">

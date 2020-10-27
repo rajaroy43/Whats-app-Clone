@@ -12,3 +12,16 @@
     background-color: white;
     box-shadow:-1px 4px 20px -6px rgba(0, 0, 0, 0.2);
 }
+
+@media(max-width:500px){
+    .app{
+        place-items:start;
+        height: 100vh;
+    }
+    .app__body{
+        height: 100%;
+        width: fit-content;
+        position: absolute;
+
+    }   
+}

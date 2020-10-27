@@ -10,19 +10,23 @@
     margin: auto;
     text-transform: capitalize;
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 20%;
     font-size: 30px;
 }
-.welcome__container{
-    display: flex;
-}
 
 .welcome__video{
-    display: grid;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
-    place-items: center;
-    flex: 1;
-    min-width: 100%;
-    min-height: 100%
+}
+
+@media(max-width:500px){
+
+    .welcome{
+        display: none;
+        width: 0;
+    }
+
 }

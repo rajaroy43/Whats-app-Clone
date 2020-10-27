@@ -74,3 +74,9 @@
 .chat__header>.MuiAvatar-root{
 object-fit: contain !important;
 }
+
+@media(max-width:500px){
+  .sidebar{
+    flex: 1;
+  }
+}

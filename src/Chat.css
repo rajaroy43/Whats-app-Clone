@@ -7,7 +7,7 @@
 .chat__header {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 8px;
   background-color: whitesmoke;
 }
 
@@ -191,16 +191,6 @@ input[type=file] {
 .frequencyBars{
   max-width: 150px;
 }
-
-.true{
-opacity: 1;
-}
-
-.false{
-opacity: 0;
-width: 0;
-}
-
 .clear__icon{
   color: tomato !important;
   border-radius: 50%;
@@ -231,4 +221,15 @@ width: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.chat__footerRight >.false{
+  opacity: 0;
+  width: 0;
+}
+
+@media(max-width:500px){
+  .chat__body{
+    max-height: 800px;
+  }
 }
